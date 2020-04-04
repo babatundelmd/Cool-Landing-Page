@@ -51,6 +51,8 @@
     left: 0;
     right: 0;
     margin-top: 5%;
+    margin-bottom: 5%;
+
 }
 
 
@@ -137,4 +139,23 @@
     height: 200px;
     background-color: var(--Light-Grayish-Blue-Card-BG);
     border-radius: 6px;
+  }
+
+.overview-text{
+  margin: 30px 0 0;
+}
+
+  .overview-card{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+  }
+
+  .overview{
+    width: 250px;
+    height: 150px;
+    background-color: var(--Light-Grayish-Blue-Card-BG);
+    border-radius: 6px;
+    margin-top: 30px;
   }
