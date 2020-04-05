@@ -4,7 +4,7 @@
     --Bright-Red: hsl(356, 69%, 56%);
     --Facebook: hsl(195, 100%, 50%);
     --Twitter: hsl(203, 89%, 53%);
-    --Instagram: linear gradient hsl(37, 97%, 70%) to hsl(329, 70%, 58%);
+    --Instagram: linear-gradient(hsl(37, 97%, 70%) to hsl(329, 70%, 58%));
     --YouTube: hsl(348, 97%, 39%);
     /* Dark Theme */
     --Very-Dark-Blue-BG: hsl(230, 17%, 14%);
@@ -135,10 +135,16 @@
   }
 
   .cards{
+   flex-direction: column;
     width: 250px;
-    height: 200px;
+    height: 210px;
     background-color: var(--Light-Grayish-Blue-Card-BG);
+    padding: 30px 20px 20px;
     border-radius: 6px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+
   }
 
 .overview-text{
@@ -158,4 +164,61 @@
     background-color: var(--Light-Grayish-Blue-Card-BG);
     border-radius: 6px;
     margin-top: 30px;
+  }
+/* .cards div{
+  padding-top: 10px;
+} */
+
+  .cards .svg small {
+    position: relative;
+    margin-left: 5px;
+    bottom: 5px;
+    font-weight: bold;
+
+  }
+
+  .cards h1{
+    margin-top: 5px;
+    margin-bottom: 2px;
+    font-size: 3.8rem;
+    font-weight: 800;
+  }
+
+  .cards h5{
+    letter-spacing: 5px;
+    font-weight: lighter;
+  }
+
+  .cards .metric{
+    margin-top: 20px;
+  }
+
+  .cards .metric small{
+    color: var(--Lime-Green);
+    font-weight: bold;
+  }
+
+  .followers-card .facebook{
+    border-top: 4px solid var(--Facebook);
+
+  }
+  .followers-card .twitter{
+    border-top: 4px solid var(--Twitter);
+
+  }
+  .followers-card .instagram{
+
+    border-width:  4px 0 0 0;
+    border-style: solid;
+    /* -webkit-border-image: -webkit-gradient hsl(37, 97%, 70%) to hsl(329, 70%, 58%);
+    -webkit-border-image: -webkit-linear-gradient hsl(37, 97%, 70%) to hsl(329, 70%, 58%);
+    -moz-border-image: -moz-linear-gradient hsl(37, 97%, 70%) to hsl(329, 70%, 58%);
+    -o-border-image: -o-linear-gradient hsl(37, 97%, 70%) to hsl(329, 70%, 58%); */
+    /* linear-gradient(to right, hsl(0, 0%, 50%) 0%, hsla(0, 0%, 50%, 0) 100%); */
+    border-image: linear-gradient(to right, hsl(37, 97%, 70%) 100%, to hsl(329, 70%, 58%) 100%);
+      /* border-top: 4px solid var(--Instagram); */
+  }
+  .followers-card .youtube{
+    border-top: 4px solid var(--YouTube);
+
   }
