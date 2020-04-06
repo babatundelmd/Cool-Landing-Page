@@ -99,10 +99,10 @@ p, small, h5, h2 {
   .slider:before {
     position: absolute;
     content: "";
-    height: 20px;
+    height: 19.5px;
     width: 20px;
     left: 4px;
-    bottom: 5px;
+    bottom: 4.5px;
     top: 2px;
     background-color: white;
     -webkit-transition: .4s;
@@ -114,9 +114,9 @@ p, small, h5, h2 {
   }
 
   input:checked + .slider:before {
-    -webkit-transform: translateX(25px);
-    -ms-transform: translateX(25px);
-    transform: translateX(25px);
+    -webkit-transform: translateX(24px);
+    -ms-transform: translateX(24px);
+    transform: translateX(24px);
   }
   .slider.round {
     border-radius: 40px;
@@ -147,7 +147,7 @@ p, small, h5, h2 {
   .cards{
    flex-direction: column;
     width: 250px;
-    height: 210px;
+    height: 230px;
     background-color: var(--Light-Grayish-Blue-Card-BG);
     padding: 30px 20px 20px;
     border-radius: 6px;
@@ -170,15 +170,28 @@ p, small, h5, h2 {
 
   .overview{
     width: 250px;
-    height: 150px;
+    height: 120px;
     background-color: var(--Light-Grayish-Blue-Card-BG);
     border-radius: 6px;
     margin-top: 30px;
+    padding: 25px;
+
   }
 /* .cards div{
   padding-top: 10px;
 } */
 
+.overview .overview-1{
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 30px;
+}
+
+.overview .overview-2{
+  display: flex;
+  justify-content: space-between;
+
+}
   .cards .svg small {
     position: relative;
     margin-left: 5px;
