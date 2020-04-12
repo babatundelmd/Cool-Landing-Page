@@ -220,6 +220,16 @@ p, small, h5, h2 {
     font-weight: bold;
   }
 
+  .red{
+    color: var(--Bright-Red);
+    font-weight: bold;
+  }
+
+.green{
+  color: var(--Lime-Green);
+  font-weight: bold;
+}
+
   .cards .last-card {
     font-weight: bold;
     margin-top: 20px;
