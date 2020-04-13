@@ -14,7 +14,7 @@
     --White-Text: hsl(0, 0%, 100%);
     /* Toggle Colors */
     --Toggle-Light: hsl(230, 22%, 74%);
-    --Toggle-Dark-Theme: linear gradient hsl(210, 78%, 56%) to hsl(146, 68%, 55%);
+    --Toggle-Dark-Theme: linear-gradient(56deg, rgba(55,143,230,1) 43%, rgba(62,218,130,1) 71%);
     /* Light Theme */
     --White-BG: hsl(0, 0%, 100%);
     --Very-Pale-Blue-Top-BG-Pattern: hsl(225, 100%, 98%);
@@ -110,7 +110,8 @@ p, small, h5, h2 {
   }
 
   input:checked + .slider {
-    background-color:  var(--Toggle-Light);
+    background: rgb(55,143,230);
+    background: linear-gradient(40deg, rgba(55,143,230,1) 26%, rgba(62,218,130,1) 70%);
   }
 
   input:checked + .slider:before {
