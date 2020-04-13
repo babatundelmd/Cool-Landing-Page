@@ -89,9 +89,8 @@ p, small, h5, h2 {
     left: 0;
     right: 0;
     bottom: 0;
-    background-color: #ccc;
-    /* background-color: linear-gradient(56deg, hsl(210, 78%, 56%) 43%, to hsl(146, 68%, 55%) 71%); */
-    /* background: linear-gradient(56deg, rgba(253,196,104,1) 43%, rgba(223,73,150,1) 71%); */
+    background: rgb(55,143,230);
+    background: linear-gradient(40deg, rgba(55,143,230,1) 26%, rgba(62,218,130,1) 70%);
     -webkit-transition: .4s;
     transition: .4s;
   }
@@ -262,4 +261,14 @@ p, small, h5, h2 {
   }
   .followers-card .youtube{
     border-top: 4px solid var(--YouTube);
+  }
+
+  .dark-theme{
+    background: var(--Very-Dark-Blue-BG);
+  }
+  .container-dark{
+    background: var(--Very-Dark-Blue-Top-BG-Pattern);
+  }
+  .font-dark {
+    color: var(--White-Text);
   }
