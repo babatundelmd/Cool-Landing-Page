@@ -272,3 +272,6 @@ p, small, h5, h2 {
   .font-dark {
     color: var(--White-Text);
   }
+  .cards-dark{
+    background: var(--Dark-Desaturated-Blue-Card-BG);
+  }
