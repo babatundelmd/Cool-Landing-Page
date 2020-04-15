@@ -19,6 +19,7 @@
     --White-BG: hsl(0, 0%, 100%);
     --Very-Pale-Blue-Top-BG-Pattern: hsl(225, 100%, 98%);
     --Light-Grayish-Blue-Card-BG: hsl(227, 47%, 96%);
+    --Light-Grayish-Blue-Card-BG-Hover: hsl(230, 33%, 93%);
     --Dark-Grayish-Blue-Text: hsl(228, 12%, 44%);
     --Very-Dark-Blue-Text: hsl(230, 17%, 14%);
 }
@@ -131,10 +132,15 @@ p, small, h5, h2 {
       justify-content: space-between;
   }
 
+  ._slider::before{
+    background-color: var(--Very-Dark-Blue-BG);
+  }
+
   .mode-text {
     font-size: 14px;
     margin-top: 5px;
     margin-left: 570px;
+    font-weight: bold;
   }
 
   .followers-card{
@@ -154,7 +160,11 @@ p, small, h5, h2 {
     align-items: center;
     justify-content: center;
     text-align: center;
+  }
 
+  .cards:hover {
+    /* background-color: var(--Light-Grayish-Blue-Card-BG-Hover); */
+    cursor: pointer;
   }
 
 .overview-text{
@@ -175,11 +185,12 @@ p, small, h5, h2 {
     border-radius: 6px;
     margin-top: 30px;
     padding: 25px;
-
   }
-/* .cards div{
-  padding-top: 10px;
-} */
+
+  .overview:hover{
+    /* background-color: var(--Light-Grayish-Blue-Card-BG-Hover); */
+    cursor: pointer;
+  }
 
 .overview .overview-1{
   display: flex;
