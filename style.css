@@ -334,4 +334,16 @@ p, small, h5, h2 {
     .headings-details h1{
       font-size: 1.8rem;
     }
+
+
+  .overview{
+    width: 100%;
+    border-radius: 6px;
+    margin-top: 5px;
+    padding: 12px;
+    display: flex;
+    height: auto;
+    flex-direction: column;
+  }
+
   }
