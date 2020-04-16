@@ -286,3 +286,52 @@ p, small, h5, h2 {
   .cards-dark{
     background: var(--Dark-Desaturated-Blue-Card-BG);
   }
+
+  @media screen and (max-width: 375px) {
+
+    *{
+      overflow: auto;
+      padding: 8px;
+    }
+
+    .container {
+      width: auto;
+    }
+
+    .followers{
+      width: auto;
+    }
+
+    .followers-card{
+      display: flex;
+      flex-direction: column;
+      width: auto;
+    }
+
+    .cards{
+      display: flex;
+      flex-direction: column;
+       width: auto;
+       padding: 0;
+       height: auto;
+
+     }
+
+     .headings{
+       display: flex;
+       flex-direction: column;
+       width: auto;
+     }
+
+     .mode-text {
+      font-size: 14px;
+      margin-top: 5px;
+      margin-left: 10px;
+      font-weight: bold;
+    }
+
+
+    .headings-details h1{
+      font-size: 1.8rem;
+    }
+  }
